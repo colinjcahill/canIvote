@@ -1,10 +1,17 @@
 Hey this is some text
 
-
-<br><br>
+<a href="#Wyoming">link</a>
+<a href="#end">another link</a>
+<br>
+<br>
 <table id="super" border="1">
   <th>State</th>
-  <% @states.keys.each do |key| %>
-  <tr><td><%= key %></td></tr>
-  <% end %>
+  <th>Short Name</th>
+  <% @states.each do |state, short| %>
+    <tr>
+      <td id ="<%= state %>"></a><%= state %></td>
+    <td><%= short %></td>
+  </tr>
+<% end %>
 </table>
+<h3 id ="end">whoooa</h3>
