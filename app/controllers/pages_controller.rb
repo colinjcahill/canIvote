@@ -1,7 +1,7 @@
 class PagesController < ApplicationController
+  include Charts
   def index
-    @states = YAML.load_file('./app/models/states.yml')
-    # @poll = Poll.new
+    @states = YAML.load_file('./lib/states.yml')
     binding.pry
   end
 end
