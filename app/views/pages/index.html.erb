@@ -1,5 +1,3 @@
-Hey this is some text
-
 <a href="#Wyoming">link</a>
 <a href="#end">another link</a>
 <br>
@@ -7,10 +5,13 @@ Hey this is some text
 <table id="super" border="1">
   <th>State</th>
   <th>Short Name</th>
+  <th>Polling Data</th>
   <% @states.each do |state, short| %>
     <tr>
       <td id ="<%= state %>"></a><%= state %></td>
     <td><%= short %></td>
+    <td>
+    </td>
   </tr>
 <% end %>
 </table>
