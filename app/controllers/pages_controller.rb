@@ -2,11 +2,14 @@ class PagesController < ApplicationController
   include Charts
   def index
     @states = YAML.load_file('./lib/states.yml')
-    @states.keys.each do |state|
+    @charts = Chart.where(:topic => "2016-president")
+
+    @states.each do |state, hash|
+      logger.info "Iterating through states..."
       poll = Poll.new
-      poll.search_and_parse state
-      @states << poll
+      poll.retrieve_poll state, @charts
+      hash["poll"] = poll
     end
-    binding.pry
+    logger.info "Iterating completed"
   end
 end

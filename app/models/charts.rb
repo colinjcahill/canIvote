@@ -1,6 +1,7 @@
 module Charts
   class Poll
     include Pollster
+    include ApplicationHelper
     require 'yaml'
     require 'pollster'
 
@@ -16,21 +17,23 @@ module Charts
       @no_data = nil
     end
 
-    def poll_by_state(state)
+    def retrieve_poll(state, charts)
       states = YAML.load_file('./lib/states.yml')
-      chart = Chart.where(:topic => "2016-president", :state =>"#{states[state]}").first
-      chart ? chart.estimates_by_date.first : nil
-    end
-
-    def search_and_parse(state_fullname)
-      result = poll_by_state(state_fullname)
-      if result
-        @date = result[:date]
-        parsed = result[:estimates].map {|i| Hash[*i.invert.keys]}.flatten.inject(:merge)
-        @trump_poll = parsed["Trump"]
-        @clinton_poll = parsed["Clinton"]
-        @other_poll = parsed["Other"]
-        @undecided_poll = parsed["Undecided"]
+      state_shortname = states[state]["short_name"]
+      index = charts.map {|p| p.state}.index state_shortname
+      if index
+        result = charts[index].estimates_by_date.first
+        if result
+          @date = result[:date]
+          parsed = result[:estimates].map {|i| Hash[*i.invert.keys]}.flatten.inject(:merge)
+          @trump_poll = parsed["Trump"]
+          @clinton_poll = parsed["Clinton"]
+          @other_poll = parsed["Other"]
+          @undecided_poll = parsed["Undecided"]
+          @no_data = false
+        else
+          @no_data = true
+        end
       else
         @no_data = true
       end

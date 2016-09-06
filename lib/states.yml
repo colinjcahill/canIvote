@@ -1,102 +1,153 @@
 Alabama:
-    AL
+    short_name: AL
+    poll:
 Alaska:
-    AK
+    short_name: AK
+    poll:
 Arizona:
-    AZ
+    short_name: AZ
+    poll:
 Arkansas:
-    AR
+    short_name: AR
+    poll:
 California:
-    CA
+    short_name: CA
+    poll:
 Colorado:
-    CO
+    short_name: CO
+    poll:
 Connecticut:
-    CT
+    short_name: CT
+    poll:
 District of Columbia:
-    DC
+    short_name: DC
+    poll:
 Delaware:
-    DE
+    short_name: DE
+    poll:
 Florida:
-    FL
+    short_name: FL
+    poll:
 Georgia:
-    GA
+    short_name: GA
+    poll:
 Hawaii:
-    HI
+    short_name: HI
+    poll:
 Idaho:
-    ID
+    short_name: ID
+    poll:
 Illinois:
-    IL
+    short_name: IL
+    poll:
 Indiana:
-    IN
+    short_name: IN
+    poll:
 Iowa:
-    IA
+    short_name: IA
+    poll:
 Kansas:
-    KS
+    short_name: KS
+    poll:
 Kentucky:
-    KY
+    short_name: KY
+    poll:
 Louisiana:
-    LA
+    short_name: LA
+    poll:
 Maine:
-    ME
+    short_name: ME
+    poll:
 Maryland:
-    MD
+    short_name: MD
+    poll:
 Massachusetts:
-    MA
+    short_name: MA
+    poll:
 Michigan:
-    MI
+    short_name: MI
+    poll:
 Minnesota:
-    MN
+    short_name: MN
+    poll:
 Mississippi:
-    MS
+    short_name: MS
+    poll:
 Missouri:
-    MO
+    short_name: MO
+    poll:
 Montana:
-    MT
+    short_name: MT
+    poll:
 Nebraska:
-    NE
+    short_name: NE
+    poll:
 Nevada:
-    NV
+    short_name: NV
+    poll:
 New Hampshire:
-    NH
+    short_name: NH
+    poll:
 New Jersey:
-    NJ
+    short_name: NJ
+    poll:
 New Mexico:
-    NM
+    short_name: NM
+    poll:
 New York:
-    NY
+    short_name: NY
+    poll:
 North Carolina:
-    NC
+    short_name: NC
+    poll:
 North Dakota:
-    ND
+    short_name: ND
+    poll:
 Ohio:
-    OH
+    short_name: OH
+    poll:
 Oklahoma:
-    OK
+    short_name: OK
+    poll:
 Oregon:
-    OR
+    short_name: OR
+    poll:
 Pennsylvania:
-    PA
+    short_name: PA
+    poll:
 Rhode Island:
-    RI
+    short_name: RI
+    poll:
 South Carolina:
-    SC
+    short_name: SC
+    poll:
 South Dakota:
-    SD
+    short_name: SD
+    poll:
 Tennessee:
-    TN
+    short_name: TN
+    poll:
 Texas:
-    TX
+    short_name: TX
+    poll:
 Utah:
-    UT
+    short_name: UT
+    poll:
 Vermont:
-    VT
+    short_name: VT
+    poll:
 Virginia:
-    VA
+    short_name: VA
+    poll:
 Washington:
-    WA
+    short_name: WA
+    poll:
 West Virginia:
-    WV
+    short_name: WV
+    poll:
 Wisconsin:
-    WI
+    short_name: WI
+    poll:
 Wyoming:
-    WY
+    short_name: WY
+    poll:

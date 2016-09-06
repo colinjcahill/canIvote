@@ -3582,3 +3582,1559 @@ NoMethodError (undefined method `<<' for #<Hash:0x007fa038feb688>):
   Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
   Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
   Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (118.8ms)
+
+
+Started GET "/" for ::1 at 2016-09-05 16:16:58 -0700
+Processing by PagesController#index as HTML
+Completed 500 Internal Server Error in 653ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `<<' for #<Hash:0x007fa03a32ed80>):
+  app/controllers/pages_controller.rb:8:in `block in index'
+  app/controllers/pages_controller.rb:5:in `each'
+  app/controllers/pages_controller.rb:5:in `index'
+
+
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.9ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (65.1ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (56.1ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (118.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-05 16:17:43 -0700
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 30857ms (Views: 23.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-05 16:18:14 -0700
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 71041ms (Views: 15.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-05 16:19:25 -0700
+Processing by PagesController#index as HTML
+Completed 500 Internal Server Error in 507ms (ActiveRecord: 0.0ms)
+
+TypeError (no implicit conversion of Symbol into Integer):
+  app/controllers/pages_controller.rb:8:in `[]='
+  app/controllers/pages_controller.rb:8:in `block in index'
+  app/controllers/pages_controller.rb:5:in `each'
+  app/controllers/pages_controller.rb:5:in `index'
+
+
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.9ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (64.0ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (54.7ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (123.7ms)
+
+
+Started GET "/" for ::1 at 2016-09-05 16:19:26 -0700
+Processing by PagesController#index as HTML
+Completed 500 Internal Server Error in 51ms (ActiveRecord: 0.0ms)
+
+TypeError (no implicit conversion of Symbol into Integer):
+  app/controllers/pages_controller.rb:8:in `[]='
+  app/controllers/pages_controller.rb:8:in `block in index'
+  app/controllers/pages_controller.rb:5:in `each'
+  app/controllers/pages_controller.rb:5:in `index'
+
+
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.6ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.7ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (71.7ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (59.0ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (124.4ms)
+
+
+Started PUT "/__web_console/repl_sessions/cda130efd365b2a6358837dfbd7ca614" for ::1 at 2016-09-05 16:20:05 -0700
+
+
+Started PUT "/__web_console/repl_sessions/cda130efd365b2a6358837dfbd7ca614" for ::1 at 2016-09-05 16:20:09 -0700
+
+
+Started PUT "/__web_console/repl_sessions/cda130efd365b2a6358837dfbd7ca614" for ::1 at 2016-09-05 16:20:13 -0700
+
+
+Started PUT "/__web_console/repl_sessions/cda130efd365b2a6358837dfbd7ca614" for ::1 at 2016-09-05 16:20:16 -0700
+
+
+Started PUT "/__web_console/repl_sessions/cda130efd365b2a6358837dfbd7ca614" for ::1 at 2016-09-05 16:20:25 -0700
+
+
+Started GET "/" for ::1 at 2016-09-05 16:26:15 -0700
+Processing by PagesController#index as HTML
+Completed 500 Internal Server Error in 695ms (ActiveRecord: 0.0ms)
+
+Exception ({"short_name"=>"AL", "poll"=>nil} is an invalid state):
+  app/models/charts.rb:21:in `poll_by_state'
+  app/models/charts.rb:26:in `search_and_parse'
+  app/controllers/pages_controller.rb:7:in `block in index'
+  app/controllers/pages_controller.rb:5:in `each'
+  app/controllers/pages_controller.rb:5:in `index'
+
+
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.6ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (66.5ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (53.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (117.2ms)
+
+
+Started PUT "/__web_console/repl_sessions/eab5fcc87e0622292d5f547d44d022a5" for ::1 at 2016-09-05 16:26:20 -0700
+
+
+Started PUT "/__web_console/repl_sessions/eab5fcc87e0622292d5f547d44d022a5" for ::1 at 2016-09-05 16:26:24 -0700
+
+
+Started GET "/" for ::1 at 2016-09-05 16:27:08 -0700
+Processing by PagesController#index as HTML
+Completed 500 Internal Server Error in 231ms (ActiveRecord: 0.0ms)
+
+TypeError (no implicit conversion of Symbol into Integer):
+  app/controllers/pages_controller.rb:8:in `[]='
+  app/controllers/pages_controller.rb:8:in `block in index'
+  app/controllers/pages_controller.rb:5:in `each'
+  app/controllers/pages_controller.rb:5:in `index'
+
+
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.7ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (72.7ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (57.3ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (121.6ms)
+
+
+Started PUT "/__web_console/repl_sessions/d35b0eabee76107149eabc76cb889c53" for ::1 at 2016-09-05 16:27:12 -0700
+
+
+Started PUT "/__web_console/repl_sessions/d35b0eabee76107149eabc76cb889c53" for ::1 at 2016-09-05 16:27:15 -0700
+
+
+Started PUT "/__web_console/repl_sessions/d35b0eabee76107149eabc76cb889c53" for ::1 at 2016-09-05 16:27:18 -0700
+
+
+Started PUT "/__web_console/repl_sessions/d35b0eabee76107149eabc76cb889c53" for ::1 at 2016-09-05 16:27:31 -0700
+
+
+Started PUT "/__web_console/repl_sessions/d35b0eabee76107149eabc76cb889c53" for ::1 at 2016-09-05 16:27:36 -0700
+
+
+Started PUT "/__web_console/repl_sessions/d35b0eabee76107149eabc76cb889c53" for ::1 at 2016-09-05 16:28:09 -0700
+
+
+Started PUT "/__web_console/repl_sessions/d35b0eabee76107149eabc76cb889c53" for ::1 at 2016-09-05 16:28:11 -0700
+
+
+Started PUT "/__web_console/repl_sessions/d35b0eabee76107149eabc76cb889c53" for ::1 at 2016-09-05 16:28:14 -0700
+
+
+Started PUT "/__web_console/repl_sessions/d35b0eabee76107149eabc76cb889c53" for ::1 at 2016-09-05 16:28:29 -0700
+
+
+Started PUT "/__web_console/repl_sessions/d35b0eabee76107149eabc76cb889c53" for ::1 at 2016-09-05 16:28:33 -0700
+
+
+Started GET "/" for ::1 at 2016-09-05 16:28:47 -0700
+Processing by PagesController#index as HTML
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `last' for {"short_name"=>"AL", "poll"=>nil}:Hash):
+  app/models/charts.rb:21:in `poll_by_state'
+  app/models/charts.rb:26:in `search_and_parse'
+  app/controllers/pages_controller.rb:7:in `block in index'
+  app/controllers/pages_controller.rb:5:in `each'
+  app/controllers/pages_controller.rb:5:in `index'
+
+
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (63.8ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (53.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (116.1ms)
+
+
+Started PUT "/__web_console/repl_sessions/a9ae50044ee1ff66ab5e002ca4cc2ae6" for ::1 at 2016-09-05 16:29:14 -0700
+
+
+Started PUT "/__web_console/repl_sessions/a9ae50044ee1ff66ab5e002ca4cc2ae6" for ::1 at 2016-09-05 16:29:19 -0700
+
+
+Started PUT "/__web_console/repl_sessions/a9ae50044ee1ff66ab5e002ca4cc2ae6" for ::1 at 2016-09-05 16:29:27 -0700
+
+
+Started GET "/" for ::1 at 2016-09-05 16:29:30 -0700
+
+SyntaxError (/Users/colincahill/work/canIvote/app/models/charts.rb:21: syntax error, unexpected '[', expecting '('
+...t", :state =>"#{states[state].["short_name"]}").first
+...                               ^
+/Users/colincahill/work/canIvote/app/models/charts.rb:21: syntax error, unexpected ']', expecting tSTRING_DEND
+..."#{states[state].["short_name"]}").first
+...                               ^
+/Users/colincahill/work/canIvote/app/models/charts.rb:30: syntax error, unexpected tCONSTANT, expecting tSTRING_DEND
+        @trump_poll = parsed["Trump"]
+                                   ^
+/Users/colincahill/work/canIvote/app/models/charts.rb:31: syntax error, unexpected tCONSTANT, expecting tSTRING_DEND
+        @clinton_poll = parsed["Clinton"]
+                                       ^
+/Users/colincahill/work/canIvote/app/models/charts.rb:32: syntax error, unexpected tCONSTANT, expecting tSTRING_DEND
+        @other_poll = parsed["Other"]
+                                   ^
+/Users/colincahill/work/canIvote/app/models/charts.rb:33: syntax error, unexpected tCONSTANT, expecting tSTRING_DEND
+        @undecided_poll = parsed["Undecided"]
+                                           ^
+/Users/colincahill/work/canIvote/app/models/charts.rb:33: unterminated string meets end of file
+/Users/colincahill/work/canIvote/app/models/charts.rb:33: syntax error, unexpected end-of-input, expecting tSTRING_DEND):
+  app/models/charts.rb:21: syntax error, unexpected '[', expecting '('
+  app/models/charts.rb:21: syntax error, unexpected ']', expecting tSTRING_DEND
+  app/models/charts.rb:30: syntax error, unexpected tCONSTANT, expecting tSTRING_DEND
+  app/models/charts.rb:31: syntax error, unexpected tCONSTANT, expecting tSTRING_DEND
+  app/models/charts.rb:32: syntax error, unexpected tCONSTANT, expecting tSTRING_DEND
+  app/models/charts.rb:33: syntax error, unexpected tCONSTANT, expecting tSTRING_DEND
+  app/models/charts.rb:33: unterminated string meets end of file
+  app/models/charts.rb:33: syntax error, unexpected end-of-input, expecting tSTRING_DEND
+  app/controllers/pages_controller.rb:2:in `<class:PagesController>'
+  app/controllers/pages_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.6ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (64.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (57.8ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (120.6ms)
+
+
+Started GET "/" for ::1 at 2016-09-05 16:29:46 -0700
+Processing by PagesController#index as HTML
+Completed 500 Internal Server Error in 508ms (ActiveRecord: 0.0ms)
+
+TypeError (no implicit conversion of Symbol into Integer):
+  app/controllers/pages_controller.rb:8:in `[]='
+  app/controllers/pages_controller.rb:8:in `block in index'
+  app/controllers/pages_controller.rb:5:in `each'
+  app/controllers/pages_controller.rb:5:in `index'
+
+
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.3ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (65.7ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (52.5ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (115.3ms)
+
+
+Started PUT "/__web_console/repl_sessions/dc828a1c4f84f0a94a45bdde8dec1de5" for ::1 at 2016-09-05 16:30:27 -0700
+
+
+Started PUT "/__web_console/repl_sessions/dc828a1c4f84f0a94a45bdde8dec1de5" for ::1 at 2016-09-05 16:30:31 -0700
+
+
+Started PUT "/__web_console/repl_sessions/dc828a1c4f84f0a94a45bdde8dec1de5" for ::1 at 2016-09-05 16:30:37 -0700
+
+
+Started PUT "/__web_console/repl_sessions/dc828a1c4f84f0a94a45bdde8dec1de5" for ::1 at 2016-09-05 16:30:44 -0700
+
+
+Started PUT "/__web_console/repl_sessions/dc828a1c4f84f0a94a45bdde8dec1de5" for ::1 at 2016-09-05 16:31:31 -0700
+
+
+Started PUT "/__web_console/repl_sessions/dc828a1c4f84f0a94a45bdde8dec1de5" for ::1 at 2016-09-05 16:31:41 -0700
+
+
+Started PUT "/__web_console/repl_sessions/dc828a1c4f84f0a94a45bdde8dec1de5" for ::1 at 2016-09-05 16:31:47 -0700
+
+
+Started PUT "/__web_console/repl_sessions/dc828a1c4f84f0a94a45bdde8dec1de5" for ::1 at 2016-09-05 16:32:17 -0700
+
+
+Started GET "/" for ::1 at 2016-09-05 16:32:20 -0700
+Processing by PagesController#index as HTML
+Completed 500 Internal Server Error in 598ms (ActiveRecord: 0.0ms)
+
+IndexError (string not matched):
+  app/controllers/pages_controller.rb:8:in `[]='
+  app/controllers/pages_controller.rb:8:in `block in index'
+  app/controllers/pages_controller.rb:5:in `each'
+  app/controllers/pages_controller.rb:5:in `index'
+
+
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.7ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (63.6ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (52.7ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (115.6ms)
+
+
+Started PUT "/__web_console/repl_sessions/cdb23985ddb6e536c3d1c06a62db2dc7" for ::1 at 2016-09-05 16:32:33 -0700
+
+
+Started PUT "/__web_console/repl_sessions/cdb23985ddb6e536c3d1c06a62db2dc7" for ::1 at 2016-09-05 16:32:55 -0700
+
+
+Started PUT "/__web_console/repl_sessions/cdb23985ddb6e536c3d1c06a62db2dc7" for ::1 at 2016-09-05 16:32:58 -0700
+
+
+Started PUT "/__web_console/repl_sessions/cdb23985ddb6e536c3d1c06a62db2dc7" for ::1 at 2016-09-05 16:33:07 -0700
+
+
+Started PUT "/__web_console/repl_sessions/cdb23985ddb6e536c3d1c06a62db2dc7" for ::1 at 2016-09-05 16:33:24 -0700
+
+
+Started GET "/" for ::1 at 2016-09-05 16:33:27 -0700
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 41489ms (Views: 21.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-05 16:34:09 -0700
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 6453ms (Views: 23.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-05 16:34:15 -0700
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 5628ms (Views: 16.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-05 16:34:21 -0700
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 6370ms (Views: 22.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-05 16:43:47 -0700
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 24418ms (Views: 28.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-05 16:44:12 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-09-05 16:44:12 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-09-05 16:44:12 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-09-05 16:44:12 -0700
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-09-05 16:44:12 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-09-05 16:44:12 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-05 16:44:12 -0700
+
+
+Started GET "/" for ::1 at 2016-09-05 19:19:55 -0700
+Processing by PagesController#index as HTML
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `search_and_parse' for #<Charts::Poll:0x007fa0444e8f68>):
+  app/controllers/pages_controller.rb:7:in `block in index'
+  app/controllers/pages_controller.rb:5:in `each'
+  app/controllers/pages_controller.rb:5:in `index'
+
+
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.3ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (74.1ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (63.1ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (150.6ms)
+
+
+Started GET "/" for ::1 at 2016-09-05 23:18:39 -0700
+
+SyntaxError (/Users/colincahill/work/canIvote/app/models/charts.rb:35: syntax error, unexpected '='
+        @no_data? = false
+                   ^
+/Users/colincahill/work/canIvote/app/models/charts.rb:37: syntax error, unexpected '='
+        @no_data? = true
+                   ^):
+  app/models/charts.rb:35: syntax error, unexpected '='
+  app/models/charts.rb:37: syntax error, unexpected '='
+  app/controllers/pages_controller.rb:2:in `<class:PagesController>'
+  app/controllers/pages_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.0ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (73.9ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (73.1ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (186.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-05 23:19:11 -0700
+
+SyntaxError (/Users/colincahill/work/canIvote/app/models/charts.rb:16: syntax error, unexpected '='
+      @no_data? = nil
+                 ^
+/Users/colincahill/work/canIvote/app/models/charts.rb:35: syntax error, unexpected '='
+        @no_data? = false
+                   ^
+/Users/colincahill/work/canIvote/app/models/charts.rb:37: syntax error, unexpected '='
+        @no_data? = true
+                   ^):
+  app/models/charts.rb:16: syntax error, unexpected '='
+  app/models/charts.rb:35: syntax error, unexpected '='
+  app/models/charts.rb:37: syntax error, unexpected '='
+  app/controllers/pages_controller.rb:2:in `<class:PagesController>'
+  app/controllers/pages_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.5ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.1ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (74.3ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (60.2ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (144.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-05 23:19:24 -0700
+Processing by PagesController#index as HTML
+Completed 500 Internal Server Error in 5705ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/models/charts.rb:29:in `retrieve_poll'
+  app/controllers/pages_controller.rb:7:in `block in index'
+  app/controllers/pages_controller.rb:5:in `each'
+  app/controllers/pages_controller.rb:5:in `index'
+
+
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.0ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.7ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (76.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (59.0ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (134.1ms)
+
+
+Started PUT "/__web_console/repl_sessions/b2cac96e8002c39b038b7fd59b79994e" for ::1 at 2016-09-05 23:23:36 -0700
+
+
+Started GET "/" for ::1 at 2016-09-05 23:56:07 -0700
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 17978ms (Views: 162.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-05 23:56:25 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-09-05 23:56:25 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-09-05 23:56:25 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-09-05 23:56:25 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-09-05 23:56:25 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-05 23:56:25 -0700
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-09-05 23:56:25 -0700
+
+
+Started GET "/" for ::1 at 2016-09-05 23:57:07 -0700
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 7612ms (Views: 17.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-05 23:57:15 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-09-05 23:57:15 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-09-05 23:57:15 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-09-05 23:57:15 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-09-05 23:57:15 -0700
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-09-05 23:57:15 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-05 23:57:15 -0700
+
+
+Started GET "/" for ::1 at 2016-09-05 23:57:21 -0700
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 6602ms (Views: 19.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-09-05 23:57:28 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-09-05 23:57:28 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-09-05 23:57:28 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-05 23:57:28 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-05 23:57:28 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-09-05 23:57:28 -0700
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-09-05 23:57:28 -0700
+
+
+Started GET "/" for ::1 at 2016-09-06 00:01:49 -0700
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 15860ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-06 00:02:05 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-09-06 00:02:05 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-09-06 00:02:05 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-06 00:02:05 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-09-06 00:02:05 -0700
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-09-06 00:02:05 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-09-06 00:02:05 -0700
+
+
+Started GET "/" for ::1 at 2016-09-06 00:02:45 -0700
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 206244ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/colincahill/work/canIvote/app/views/pages/index.html.erb:12: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...  hash["poll"].no_data ? puts "Sorry, no data is currently a...
+...                               ^
+/Users/colincahill/work/canIvote/app/views/pages/index.html.erb:12: syntax error, unexpected ':', expecting keyword_end
+...ly available for this state." : hash["poll"].date   
+...                               ^):
+  app/views/pages/index.html.erb:12: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+  app/views/pages/index.html.erb:12: syntax error, unexpected ':', expecting keyword_end
+
+
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (15.2ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.6ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (84.9ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (64.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (131.7ms)
+
+
+Started GET "/" for ::1 at 2016-09-06 00:06:12 -0700
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 14170ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/colincahill/work/canIvote/app/views/pages/index.html.erb:12: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...  hash["poll"].no_data ? puts "Sorry, no data is currently a...
+...                               ^
+/Users/colincahill/work/canIvote/app/views/pages/index.html.erb:12: syntax error, unexpected ':', expecting keyword_end
+...ly available for this state." : hash["poll"].date   
+...                               ^):
+  app/views/pages/index.html.erb:12: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+  app/views/pages/index.html.erb:12: syntax error, unexpected ':', expecting keyword_end
+
+
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.8ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (78.0ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (61.1ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (131.3ms)
+
+
+Started GET "/" for ::1 at 2016-09-06 00:08:36 -0700
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 23632ms (Views: 19.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-06 00:09:00 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-09-06 00:09:00 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-09-06 00:09:00 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-09-06 00:09:00 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-09-06 00:09:00 -0700
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-09-06 00:09:00 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-06 00:09:00 -0700
+
+
+Started GET "/" for ::1 at 2016-09-06 00:13:08 -0700
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 10893ms (Views: 18.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-06 00:13:19 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-09-06 00:13:19 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-09-06 00:13:19 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-09-06 00:13:19 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-06 00:13:19 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-09-06 00:13:19 -0700
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-09-06 00:13:19 -0700
+
+
+Started GET "/" for ::1 at 2016-09-06 00:13:34 -0700
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 103868ms (Views: 18.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-06 00:15:18 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-09-06 00:15:18 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-09-06 00:15:18 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-09-06 00:15:18 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-09-06 00:15:18 -0700
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-09-06 00:15:18 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-06 00:15:18 -0700
+
+
+Started GET "/" for ::1 at 2016-09-06 00:17:18 -0700
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 19050ms (Views: 19.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-09-06 00:17:38 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-06 00:17:38 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-09-06 00:17:38 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-06 00:17:38 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-09-06 00:17:38 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-09-06 00:17:38 -0700
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-09-06 00:17:38 -0700
+
+
+Started GET "/" for ::1 at 2016-09-06 00:17:45 -0700
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 73467ms (Views: 19.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-06 00:18:58 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-09-06 00:18:58 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-09-06 00:18:58 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-06 00:18:58 -0700
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-09-06 00:18:58 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-09-06 00:18:58 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-09-06 00:18:58 -0700
+
+
+Started GET "/" for ::1 at 2016-09-06 00:19:02 -0700
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 58498ms (Views: 19.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-06 00:20:01 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-09-06 00:20:01 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-09-06 00:20:01 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-09-06 00:20:01 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-09-06 00:20:01 -0700
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-09-06 00:20:01 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-06 00:20:01 -0700
+
+
+Started GET "/" for ::1 at 2016-09-06 00:20:02 -0700
+Processing by PagesController#index as HTML
+Completed   in 263988ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-06 00:25:26 -0700
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (28.3ms)
+Completed 500 Internal Server Error in 18731ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `format_data' for 46.17:Float):
+    15:         Poll Date:
+    16:         <br>
+    17:         <%= hash["poll"].date %>
+    18:         <li>Clinton percent: <%= hash["poll"].clinton_poll.format_data %></li>
+    19:         <li>Trump percent: <%= hash["poll"].trump_poll.format_data %></li>
+    20:         <li>Other candidates percent: <%= hash["poll"].other_poll.format_data %></li>
+    21:         <li>Undecided percent: <%= hash["poll"].undecided_poll.format_data %></li>
+  app/views/pages/index.html.erb:18:in `block in _app_views_pages_index_html_erb__296316628236682458_70213786007080'
+  app/views/pages/index.html.erb:8:in `each'
+  app/views/pages/index.html.erb:8:in `_app_views_pages_index_html_erb__296316628236682458_70213786007080'
+
+
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (71.5ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (159.8ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (234.4ms)
+
+
+Started GET "/" for ::1 at 2016-09-06 00:26:38 -0700
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 10383ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `format_data' for 46.17:Float):
+    15:         Poll Date:
+    16:         <br>
+    17:         <%= hash["poll"].date %>
+    18:         <li>Clinton percent: <%= hash["poll"].clinton_poll.format_data %></li>
+    19:         <li>Trump percent: <%= hash["poll"].trump_poll.format_data %></li>
+    20:         <li>Other candidates percent: <%= hash["poll"].other_poll.format_data %></li>
+    21:         <li>Undecided percent: <%= hash["poll"].undecided_poll.format_data %></li>
+  app/views/pages/index.html.erb:18:in `block in _app_views_pages_index_html_erb__296316628236682458_70213786007080'
+  app/views/pages/index.html.erb:8:in `each'
+  app/views/pages/index.html.erb:8:in `_app_views_pages_index_html_erb__296316628236682458_70213786007080'
+
+
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.2ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (75.9ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (55.3ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (127.5ms)
+
+
+Started GET "/" for ::1 at 2016-09-06 00:28:26 -0700
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (2.3ms)
+Completed 500 Internal Server Error in 11922ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `format_data' for 46.17:Float):
+    15:         Poll Date:
+    16:         <br>
+    17:         <%= hash["poll"].date %>
+    18:         <li>Clinton percent: <%= hash["poll"].clinton_poll.format_data %></li>
+    19:         <li>Trump percent: <%= hash["poll"].trump_poll.format_data %></li>
+    20:         <li>Other candidates percent: <%= hash["poll"].other_poll.format_data %></li>
+    21:         <li>Undecided percent: <%= hash["poll"].undecided_poll.format_data %></li>
+  app/views/pages/index.html.erb:18:in `block in _app_views_pages_index_html_erb__296316628236682458_70213786007080'
+  app/views/pages/index.html.erb:8:in `each'
+  app/views/pages/index.html.erb:8:in `_app_views_pages_index_html_erb__296316628236682458_70213786007080'
+
+
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.8ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (76.2ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (60.5ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (144.3ms)
+
+
+Started GET "/" for ::1 at 2016-09-06 00:28:54 -0700
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 10452ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `format_data' for 46.17:Float):
+    15:         Poll Date:
+    16:         <br>
+    17:         <%= hash["poll"].date %>
+    18:         <li>Clinton percent: <%= hash["poll"].clinton_poll.format_data %></li>
+    19:         <li>Trump percent: <%= hash["poll"].trump_poll.format_data %></li>
+    20:         <li>Other candidates percent: <%= hash["poll"].other_poll.format_data %></li>
+    21:         <li>Undecided percent: <%= hash["poll"].undecided_poll.format_data %></li>
+  app/views/pages/index.html.erb:18:in `block in _app_views_pages_index_html_erb__296316628236682458_70213786007080'
+  app/views/pages/index.html.erb:8:in `each'
+  app/views/pages/index.html.erb:8:in `_app_views_pages_index_html_erb__296316628236682458_70213786007080'
+
+
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.2ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.8ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (87.1ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (54.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (124.1ms)
+
+
+Started GET "/" for ::1 at 2016-09-06 00:33:38 -0700
+
+TypeError (superclass must be a Class (Module given)):
+  app/models/charts.rb:5:in `<module:Charts>'
+  app/models/charts.rb:1:in `<top (required)>'
+  app/controllers/pages_controller.rb:2:in `<class:PagesController>'
+  app/controllers/pages_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (74.0ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (53.6ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (119.2ms)
+
+
+Started GET "/" for ::1 at 2016-09-06 00:35:37 -0700
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 24083ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `format_data' for 46.17:Float):
+    15:         Poll Date:
+    16:         <br>
+    17:         <%= hash["poll"].date %>
+    18:         <li>Clinton percent: <%= hash["poll"].clinton_poll.format_data %></li>
+    19:         <li>Trump percent: <%= hash["poll"].trump_poll.format_data %></li>
+    20:         <li>Other candidates percent: <%= hash["poll"].other_poll.format_data %></li>
+    21:         <li>Undecided percent: <%= hash["poll"].undecided_poll.format_data %></li>
+  app/views/pages/index.html.erb:18:in `block in _app_views_pages_index_html_erb__296316628236682458_70213786007080'
+  app/views/pages/index.html.erb:8:in `each'
+  app/views/pages/index.html.erb:8:in `_app_views_pages_index_html_erb__296316628236682458_70213786007080'
+
+
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.5ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (73.8ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (55.5ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (141.3ms)
+
+
+Started GET "/" for ::1 at 2016-09-06 00:36:44 -0700
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 17522ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `format_data' for 46.17:Float):
+    15:         Poll Date:
+    16:         <br>
+    17:         <%= hash["poll"].date %>
+    18:         <li>Clinton percent: <%= hash["poll"].clinton_poll.format_data %></li>
+    19:         <li>Trump percent: <%= hash["poll"].trump_poll.format_data %></li>
+    20:         <li>Other candidates percent: <%= hash["poll"].other_poll.format_data %></li>
+    21:         <li>Undecided percent: <%= hash["poll"].undecided_poll.format_data %></li>
+  app/views/pages/index.html.erb:18:in `block in _app_views_pages_index_html_erb__296316628236682458_70213786007080'
+  app/views/pages/index.html.erb:8:in `each'
+  app/views/pages/index.html.erb:8:in `_app_views_pages_index_html_erb__296316628236682458_70213786007080'
+
+
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (68.2ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (55.7ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (125.3ms)
+
+
+Started GET "/" for ::1 at 2016-09-06 00:43:38 -0700
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 17289ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `format_data' for 46.17:Float):
+    15:         Poll Date:
+    16:         <br>
+    17:         <%= hash["poll"].date %>
+    18:         <li>Clinton percent: <%= hash["poll"].clinton_poll.format_data %></li>
+    19:         <li>Trump percent: <%= hash["poll"].trump_poll.format_data %></li>
+    20:         <li>Other candidates percent: <%= hash["poll"].other_poll.format_data %></li>
+    21:         <li>Undecided percent: <%= hash["poll"].undecided_poll.format_data %></li>
+  app/views/pages/index.html.erb:18:in `block in _app_views_pages_index_html_erb__296316628236682458_70213786007080'
+  app/views/pages/index.html.erb:8:in `each'
+  app/views/pages/index.html.erb:8:in `_app_views_pages_index_html_erb__296316628236682458_70213786007080'
+
+
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.1ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (66.3ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (58.0ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (141.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-06 00:44:20 -0700
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (14.6ms)
+Completed 500 Internal Server Error in 435390ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `format_data' for #<#<Class:0x007fb7d5ac28a0>:0x007fb7d9a331b0>):
+    15:         Poll Date:
+    16:         <br>
+    17:         <%= hash["poll"].date %>
+    18:         <li>Clinton percent: <%= format_data(hash["poll"].clinton_poll) %></li>
+    19:         <li>Trump percent: <%= format_data(hash["poll"].trump_poll) %></li>
+    20:         <li>Other candidates percent: <%= format_data(hash["poll"].other_poll) %></li>
+    21:         <li>Undecided percent: <%= format_data(hash["poll"].undecided_poll) %></li>
+  app/views/pages/index.html.erb:18:in `block in _app_views_pages_index_html_erb__296316628236682458_70213803543220'
+  app/views/pages/index.html.erb:8:in `each'
+  app/views/pages/index.html.erb:8:in `_app_views_pages_index_html_erb__296316628236682458_70213803543220'
+
+
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.5ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (70.7ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (54.3ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (130.6ms)
+
+
+Started GET "/" for ::1 at 2016-09-06 00:51:56 -0700
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (15.3ms)
+Completed 500 Internal Server Error in 16325ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `format_data' for #<#<Class:0x007fb7d5996e18>:0x007fb7d5987698>):
+    15:         Poll Date:
+    16:         <br>
+    17:         <%= hash["poll"].date %>
+    18:         <li>Clinton percent: <%= format_data(hash["poll"].clinton_poll) %></li>
+    19:         <li>Trump percent: <%= format_data(hash["poll"].trump_poll) %></li>
+    20:         <li>Other candidates percent: <%= format_data(hash["poll"].other_poll) %></li>
+    21:         <li>Undecided percent: <%= format_data(hash["poll"].undecided_poll) %></li>
+  app/views/pages/index.html.erb:18:in `block in _app_views_pages_index_html_erb__296316628236682458_70213803543220'
+  app/views/pages/index.html.erb:8:in `each'
+  app/views/pages/index.html.erb:8:in `_app_views_pages_index_html_erb__296316628236682458_70213803543220'
+
+
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.5ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.8ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (76.5ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (56.1ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (128.5ms)
+
+
+Started GET "/" for ::1 at 2016-09-06 00:53:17 -0700
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (15.0ms)
+Completed 500 Internal Server Error in 8090ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `format_data' for #<#<Class:0x007fb7d439a538>:0x007fb7d4390178>):
+    15:         Poll Date:
+    16:         <br>
+    17:         <%= hash["poll"].date %>
+    18:         <li>Clinton percent: <%= format_data(hash["poll"].clinton_poll) %></li>
+    19:         <li>Trump percent: <%= format_data(hash["poll"].trump_poll) %></li>
+    20:         <li>Other candidates percent: <%= format_data(hash["poll"].other_poll) %></li>
+    21:         <li>Undecided percent: <%= format_data(hash["poll"].undecided_poll) %></li>
+  app/views/pages/index.html.erb:18:in `block in _app_views_pages_index_html_erb__296316628236682458_70213803543220'
+  app/views/pages/index.html.erb:8:in `each'
+  app/views/pages/index.html.erb:8:in `_app_views_pages_index_html_erb__296316628236682458_70213803543220'
+
+
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.3ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (68.6ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (59.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (5.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (130.9ms)
+
+
+Started GET "/" for ::1 at 2016-09-06 00:53:55 -0700
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (14.8ms)
+Completed 500 Internal Server Error in 65971ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `format_data' for #<#<Class:0x007fb7d79a41b0>:0x007fb7d799efd0>):
+    15:         Poll Date:
+    16:         <br>
+    17:         <%= hash["poll"].date %>
+    18:         <li>Clinton percent: <%= format_data(hash["poll"].clinton_poll) %></li>
+    19:         <li>Trump percent: <%= format_data(hash["poll"].trump_poll) %></li>
+    20:         <li>Other candidates percent: <%= format_data(hash["poll"].other_poll) %></li>
+    21:         <li>Undecided percent: <%= format_data(hash["poll"].undecided_poll) %></li>
+  app/views/pages/index.html.erb:18:in `block in _app_views_pages_index_html_erb__296316628236682458_70213803543220'
+  app/views/pages/index.html.erb:8:in `each'
+  app/views/pages/index.html.erb:8:in `_app_views_pages_index_html_erb__296316628236682458_70213803543220'
+
+
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.9ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (71.5ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (65.3ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (140.7ms)
+
+
+Started GET "/" for ::1 at 2016-09-06 00:55:05 -0700
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 9593ms (Views: 443.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-09-06 00:55:15 -0700
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-06 00:55:15 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-09-06 00:55:15 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-09-06 00:55:15 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-09-06 00:55:15 -0700
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-09-06 00:55:15 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-06 00:55:15 -0700
+
+
+Started GET "/" for ::1 at 2016-09-06 01:00:02 -0700
+Processing by PagesController#index as HTML
+Iterating through states...
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+NameError (undefined local variable or method `logger' for #<Charts::Poll:0x007fb7d5be6da8>):
+  app/models/charts.rb:26:in `retrieve_poll'
+  app/controllers/pages_controller.rb:8:in `block in index'
+  app/controllers/pages_controller.rb:5:in `each'
+  app/controllers/pages_controller.rb:5:in `index'
+
+
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.0ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (72.6ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (57.8ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (123.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-06 01:00:55 -0700
+Processing by PagesController#index as HTML
+Iterating through states...
+Iterating through states...
+Iterating through states...
+Iterating through states...
+Iterating through states...
+Iterating through states...
+Iterating through states...
+Iterating through states...
+Iterating through states...
+Iterating through states...
+Iterating through states...
+Iterating through states...
+Iterating through states...
+Iterating through states...
+Iterating through states...
+Iterating through states...
+Iterating through states...
+Iterating through states...
+Iterating through states...
+Iterating through states...
+Iterating through states...
+Iterating through states...
+Iterating through states...
+Iterating through states...
+Iterating through states...
+Iterating through states...
+Iterating through states...
+Iterating through states...
+Iterating through states...
+Iterating through states...
+Iterating through states...
+Iterating through states...
+Iterating through states...
+Iterating through states...
+Iterating through states...
+Iterating through states...
+Iterating through states...
+Iterating through states...
+Iterating through states...
+Iterating through states...
+Iterating through states...
+Iterating through states...
+Iterating through states...
+Iterating through states...
+Iterating through states...
+Iterating through states...
+Iterating through states...
+Iterating through states...
+Iterating through states...
+Iterating through states...
+Iterating through states...
+Iterating completed
+  Rendered pages/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 15343ms (Views: 16.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-06 01:01:10 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-09-06 01:01:10 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-09-06 01:01:10 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-09-06 01:01:10 -0700
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-09-06 01:01:10 -0700
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-06 01:01:10 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-09-06 01:01:10 -0700
+
+
+Started GET "/" for ::1 at 2016-09-06 01:06:10 -0700
+Processing by PagesController#index as HTML
+Iterating through states...
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `map' for nil:NilClass):
+  app/models/charts.rb:25:in `retrieve_poll'
+  app/controllers/pages_controller.rb:8:in `block in index'
+  app/controllers/pages_controller.rb:5:in `each'
+  app/controllers/pages_controller.rb:5:in `index'
+
+
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.1ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (73.3ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (54.6ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (119.8ms)
+
+
+Started GET "/" for ::1 at 2016-09-06 01:08:01 -0700
+Processing by PagesController#index as HTML
+Iterating through states...
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `map' for nil:NilClass):
+  app/models/charts.rb:25:in `retrieve_poll'
+  app/controllers/pages_controller.rb:8:in `block in index'
+  app/controllers/pages_controller.rb:5:in `each'
+  app/controllers/pages_controller.rb:5:in `index'
+
+
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.8ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (11.6ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (85.5ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (51.7ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (114.8ms)
+
+
+Started PUT "/__web_console/repl_sessions/7bbb6c39088e362a8c3684156403d04f" for ::1 at 2016-09-06 01:08:07 -0700
+
+
+Started PUT "/__web_console/repl_sessions/7bbb6c39088e362a8c3684156403d04f" for ::1 at 2016-09-06 01:08:16 -0700
+
+
+Started PUT "/__web_console/repl_sessions/7bbb6c39088e362a8c3684156403d04f" for ::1 at 2016-09-06 01:08:20 -0700
+
+
+Started PUT "/__web_console/repl_sessions/7bbb6c39088e362a8c3684156403d04f" for ::1 at 2016-09-06 01:08:29 -0700
+
+
+Started PUT "/__web_console/repl_sessions/7bbb6c39088e362a8c3684156403d04f" for ::1 at 2016-09-06 01:08:37 -0700
+
+
+Started PUT "/__web_console/repl_sessions/7bbb6c39088e362a8c3684156403d04f" for ::1 at 2016-09-06 01:08:40 -0700
+
+
+Started PUT "/__web_console/repl_sessions/7bbb6c39088e362a8c3684156403d04f" for ::1 at 2016-09-06 01:08:43 -0700
+
+
+Started GET "/" for ::1 at 2016-09-06 01:08:56 -0700
+Processing by PagesController#index as HTML
+Iterating through states...
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `map' for nil:NilClass):
+  app/models/charts.rb:25:in `retrieve_poll'
+  app/controllers/pages_controller.rb:8:in `block in index'
+  app/controllers/pages_controller.rb:5:in `each'
+  app/controllers/pages_controller.rb:5:in `index'
+
+
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.9ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (65.7ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (58.6ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (127.9ms)
+
+
+Started PUT "/__web_console/repl_sessions/4ded013a85d606c7768e70e7351c8ec9" for ::1 at 2016-09-06 01:09:00 -0700
+
+
+Started PUT "/__web_console/repl_sessions/4ded013a85d606c7768e70e7351c8ec9" for ::1 at 2016-09-06 01:09:53 -0700
+
+
+Started GET "/" for ::1 at 2016-09-06 01:13:20 -0700
+Processing by PagesController#index as HTML
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+NameError (uninitialized constant PagesController::Chart):
+  app/controllers/pages_controller.rb:5:in `index'
+
+
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (66.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (52.8ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (119.2ms)
+
+
+Started GET "/" for ::1 at 2016-09-06 01:13:41 -0700
+Processing by PagesController#index as HTML
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `include' for #<PagesController:0x007fb7dd2b53a8>):
+  app/controllers/pages_controller.rb:3:in `index'
+
+
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.2ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (73.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (52.9ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (123.4ms)
+
+
+Started GET "/" for ::1 at 2016-09-06 01:14:07 -0700
+
+ActionController::RoutingError (uninitialized constant PagesController::Chart):
+  app/controllers/pages_controller.rb:3:in `<class:PagesController>'
+  app/controllers/pages_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.9ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (48.6ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (144.5ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (73.5ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (145.4ms)
+
+
+Started GET "/" for ::1 at 2016-09-06 01:14:24 -0700
+Processing by PagesController#index as HTML
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+NameError (uninitialized constant PagesController::Chart):
+  app/controllers/pages_controller.rb:5:in `index'
+
+
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.7ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (65.4ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (52.6ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/colincahill/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (130.3ms)
