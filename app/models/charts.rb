@@ -1,7 +1,6 @@
 module Charts
   class Poll
     include Pollster
-    include ApplicationHelper
     require 'yaml'
     require 'pollster'
 
@@ -17,9 +16,7 @@ module Charts
       @no_data = nil
     end
 
-    def retrieve_poll(state, charts)
-      states = YAML.load_file('./lib/states.yml')
-      state_shortname = states[state]["short_name"]
+    def retrieve_poll(state_shortname, charts)
       index = charts.map {|p| p.state}.index state_shortname
       if index
         result = charts[index].estimates_by_date.first

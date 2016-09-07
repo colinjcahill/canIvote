@@ -23,6 +23,6 @@ module Canivote
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
     config.logger = Logger.new(STDOUT)
-    config.log_level = :warn
+    config.log_level = :info
   end
 end
