@@ -2,6 +2,7 @@ class PagesController < ApplicationController
   include Pollster
   include Charts
   def index
+    start = Time.now
     @charts = Chart.where(:topic => "2016-president")
     @states = YAML.load_file('./lib/states.yml')
     @states.each do |state, hash|
@@ -11,5 +12,7 @@ class PagesController < ApplicationController
       hash["poll"] = poll
     end
     logger.info "Iterating completed"
+    finish = Time.now
+    puts finish - start
   end
 end
