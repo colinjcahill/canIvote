@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  percent_clinton: 1.5
+  percent_trump: 1.5
+  pollster: false
+  jill_on_ballot: false
+  jill_write_in: false
+  pollster_dump: MyString
+  splits_vote: false
+  can_I_vote: false
+
+two:
+  percent_clinton: 1.5
+  percent_trump: 1.5
+  pollster: false
+  jill_on_ballot: false
+  jill_write_in: false
+  pollster_dump: MyString
+  splits_vote: false
+  can_I_vote: false
