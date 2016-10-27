@@ -38,6 +38,7 @@ group :development, :test do
   gem 'pollster'
   gem 'pry-rails'
   gem 'awesome_print'
+  gem 'nokogiri'
 end
 
 group :development do
