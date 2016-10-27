@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161027073058) do
+ActiveRecord::Schema.define(version: 20161027080654) do
 
   create_table "states", force: :cascade do |t|
     t.float    "percent_clinton"
@@ -26,6 +26,8 @@ ActiveRecord::Schema.define(version: 20161027073058) do
     t.datetime "updated_at",       null: false
     t.datetime "updated_538"
     t.datetime "pollster_updated"
+    t.string   "state_long"
+    t.string   "state_short"
   end
 
 end
