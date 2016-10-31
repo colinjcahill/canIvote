@@ -5,23 +5,13 @@
 <table id="super" border="1">
   <th>State</th>
   <th>Polling Data</th>
-  <% @states.each do |state, hash| %>
+  <% @states.each do |state| %>
     <tr>
       <td id ="<%= state %>"></a><%= state %></td>
     <td>
-      <% if hash["poll"].no_data %>
-        <p id = "no-data"> Sorry, no data is currently available for this state.</p>
-      <% else %>
-        Poll Date:
-        <br>
-        <%= hash["poll"].date %>
-        <li>Clinton percent: <%= format_data(hash["poll"].clinton_poll) %></li>
-        <li>Trump percent: <%= format_data(hash["poll"].trump_poll) %></li>
-        <li>Other candidates percent: <%= format_data(hash["poll"].other_poll) %></li>
-        <li>Undecided percent: <%= format_data(hash["poll"].undecided_poll) %></li>
-      <% end %>
-    </td>
-  </tr>
+    <% end %>
+  </td>
+</tr>
 <% end %>
 </table>
 <h3 id ="end">whoooa</h3>

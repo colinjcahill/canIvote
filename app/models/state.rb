@@ -14,7 +14,6 @@ class State < ActiveRecord::Base
   @@huff = Pollster::Chart.where(:topic => "2016-president")
 
   def fte_pull_and_parse(state_shortcode)
-
     clinton_chance = @@five_thirty_eight.search("div[data-set=#{state_shortcode.upcase}] div.candidate.dem p[data-key=winprob]").text.tr('%<>','')
     trump_chance = @@five_thirty_eight.search("div[data-set=#{state_shortcode.upcase}] div.candidate.rep p[data-key=winprob]").text.tr('%<>','')
     @scraped_hash = {
@@ -33,11 +32,8 @@ class State < ActiveRecord::Base
   def refresh
     fte_data = fte_pull_and_parse(self.state_short)
     huff_data = huff_pull_and_parse(self.state_short)
-    self.pollster = true if huff_data
-    self.pollster_dump = huff_data if huff_data
-    self.updated_538 = fte_data[:updated]
-    self.percent_clinton = fte_data[:clinton]
-    self.percent_trump = fte_data[:trump]
+    huff_data ? (self.pollster_dump = huff_data; self.pollster = true) : (puts "No Pollster Data")
+    fte_data ? (self.updated_538 = fte_data[:updated]; self.percent_clinton = fte_data[:clinton]; self.percent_trump = fte_data[:trump]) : "No FiveThirtyEight Data"
     self.save
   end
 end
