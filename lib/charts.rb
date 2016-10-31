@@ -18,7 +18,7 @@ module Charts
     end
 
     def poll_by_state(state)
-      chart = Chart.where(:topic => "2016-president", :state =>"#{@states[state]}").first
+      chart = Pollster::Chart.where(:topic => "2016-president", :state =>"#{@states[state]}").first
       chart.estimates_by_date.first
     end
   end
