@@ -1,4 +1,5 @@
-<a href="#Wyoming">link</a>
+<a href="#Wyoming">wyom</a>
+<a href="#Nebraska">neb</a>
 <a href="#end">another link</a>
 <br>
 <br>
@@ -7,11 +8,17 @@
   <th>Polling Data</th>
   <% @states.each do |state| %>
     <tr>
-      <td id ="<%= state %>"></a><%= state %></td>
-    <td>
-    <% end %>
-  </td>
-</tr>
-<% end %>
+      <td id ="<%= state.state_long %>"><%= state.state_long %></td>
+      <td>
+        <ul>
+          <li>FivethirtyEight Clinton: <%= state.percent_clinton %>%</li>
+          <li>FivethirtyEight Trump: <%= state.percent_trump %>%</li>
+          <li></li>
+          <li></li>
+        </ul>
+      </td>
+    </tr>
+  <% end %>
 </table>
 <h3 id ="end">whoooa</h3>
+<a href="#Maryland">mary</a>
