@@ -5,7 +5,7 @@ class State < ActiveRecord::Base
   require 'yaml'
   require 'pollster'
 
-  attr_accessor :winning_margin, :caution
+  attr_accessor :winning_margin
 
   def self.poll_for_data
     @@pull_time = Time.now
@@ -43,11 +43,11 @@ class State < ActiveRecord::Base
     when small_win
       self.can_I_vote = false
     when moderate_win
-      self.can_I_vote = true
       self.caution = true
-    when large_win
       self.can_I_vote = true
+    when large_win
       self.caution = false
+      self.can_I_vote = true
     end
     self.save
   end
@@ -58,6 +58,5 @@ class State < ActiveRecord::Base
     huff_data ? (self.pollster_dump = huff_data; self.pollster = true; self.pollster_updated = JSON.parse(huff_data)["date"].to_datetime) : (puts "No Pollster Data for " + self.state_long)
     fte_data ? (self.updated_538 = fte_data[:updated]; self.percent_clinton = fte_data[:clinton]; self.percent_trump = fte_data[:trump]) : "No FiveThirtyEight Data"
     self.calculate
-    self.save
   end
 end
