@@ -5,3 +5,14 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+require 'yaml'
+@states = YAML.load_file('./lib/states.yml')
+@states.each do |long, short|
+  state = State.new
+  puts "Creating seed data for " + long
+  state.state_long = long
+  state.state_short = short
+  state.jill_on_ballot = true
+  state.refresh
+end

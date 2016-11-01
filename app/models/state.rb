@@ -5,10 +5,6 @@ class State < ActiveRecord::Base
   require 'yaml'
   require 'pollster'
 
-
-
-  attr_accessor :five_thirty_eight
-
   @@pull_time = Time.now
   @@five_thirty_eight = Nokogiri::HTML(open("http://projects.fivethirtyeight.com/2016-election-forecast"))
   @@huff = Pollster::Chart.where(:topic => "2016-president")
@@ -32,7 +28,7 @@ class State < ActiveRecord::Base
   def refresh
     fte_data = fte_pull_and_parse(self.state_short)
     huff_data = huff_pull_and_parse(self.state_short)
-    huff_data ? (self.pollster_dump = huff_data; self.pollster = true) : (puts "No Pollster Data")
+    huff_data ? (self.pollster_dump = huff_data; self.pollster = true; self.pollster_updated = JSON.parse(huff_data)["date"].to_datetime) : (puts "No Pollster Data")
     fte_data ? (self.updated_538 = fte_data[:updated]; self.percent_clinton = fte_data[:clinton]; self.percent_trump = fte_data[:trump]) : "No FiveThirtyEight Data"
     self.save
   end
