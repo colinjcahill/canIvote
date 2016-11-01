@@ -8,11 +8,16 @@
 
 require 'yaml'
 @states = YAML.load_file('./lib/states.yml')
+State.poll_for_data
 @states.each do |long, short|
   state = State.new
   puts "Creating seed data for " + long
   state.state_long = long
   state.state_short = short
-  state.jill_on_ballot = true
   state.refresh
 end
+
+State.all.update_all(jill_on_ballot: true, splits_vote: false)
+State.where(state_short: ["SD", "NV", "OK", "IN", "NC", "GA"]).update_all(jill_on_ballot: false)
+State.where(state_short: ["IN", "NC", "GA"]).update_all(jill_write_in: true)
+State.where(state_short: ["NE", "ME"]).update_all(splits_vote: true)

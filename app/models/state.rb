@@ -5,9 +5,12 @@ class State < ActiveRecord::Base
   require 'yaml'
   require 'pollster'
 
-  @@pull_time = Time.now
-  @@five_thirty_eight = Nokogiri::HTML(open("http://projects.fivethirtyeight.com/2016-election-forecast"))
-  @@huff = Pollster::Chart.where(:topic => "2016-president")
+  def self.poll_for_data
+    @@pull_time = Time.now
+    @@five_thirty_eight = Nokogiri::HTML(open("http://projects.fivethirtyeight.com/2016-election-forecast"))
+    @@huff = Pollster::Chart.where(:topic => "2016-president")
+  end
+
 
   def fte_pull_and_parse(state_shortcode)
     clinton_chance = @@five_thirty_eight.search("div[data-set=#{state_shortcode.upcase}] div.candidate.dem p[data-key=winprob]").text.tr('%<>','')

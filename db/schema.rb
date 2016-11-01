@@ -14,20 +14,20 @@
 ActiveRecord::Schema.define(version: 20161027080654) do
 
   create_table "states", force: :cascade do |t|
-    t.float    "percent_clinton"
-    t.float    "percent_trump"
+    t.float    "percent_clinton",  limit: 24
+    t.float    "percent_trump",    limit: 24
     t.boolean  "pollster"
     t.boolean  "jill_on_ballot"
     t.boolean  "jill_write_in"
-    t.string   "pollster_dump"
+    t.string   "pollster_dump",    limit: 255
     t.boolean  "splits_vote"
     t.boolean  "can_I_vote"
-    t.datetime "created_at",       null: false
-    t.datetime "updated_at",       null: false
+    t.datetime "created_at",                   null: false
+    t.datetime "updated_at",                   null: false
     t.datetime "updated_538"
     t.datetime "pollster_updated"
-    t.string   "state_long"
-    t.string   "state_short"
+    t.string   "state_long",       limit: 255
+    t.string   "state_short",      limit: 255
   end
 
 end
