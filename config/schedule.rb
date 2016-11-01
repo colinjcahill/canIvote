@@ -21,3 +21,4 @@
 
 
 State.poll_for_data
+State.all.each {|s| s.refresh}
