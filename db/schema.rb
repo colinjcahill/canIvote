@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161027080654) do
+ActiveRecord::Schema.define(version: 20161101074751) do
 
   create_table "states", force: :cascade do |t|
     t.float    "percent_clinton",  limit: 24
@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(version: 20161027080654) do
     t.datetime "pollster_updated"
     t.string   "state_long",       limit: 255
     t.string   "state_short",      limit: 255
+    t.boolean  "caution"
   end
 
 end

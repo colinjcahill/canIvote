@@ -30,9 +30,11 @@ class State < ActiveRecord::Base
     poll.estimates_by_date.first.to_json if poll
   end
 
+  def winning_margin
+    (self.percent_clinton - self.percent_trump).abs
+  end
+
   def calculate
-    self.winning_margin = (self.percent_clinton - self.percent_trump).abs
-    self.caution = nil
     small_win = 0..14.99999999
     moderate_win = 15..24.99999999
     large_win = 25..100
@@ -48,7 +50,6 @@ class State < ActiveRecord::Base
       self.caution = false
     end
     self.save
-    self.caution
   end
 
   def refresh
@@ -56,6 +57,7 @@ class State < ActiveRecord::Base
     huff_data = huff_pull_and_parse(self.state_short)
     huff_data ? (self.pollster_dump = huff_data; self.pollster = true; self.pollster_updated = JSON.parse(huff_data)["date"].to_datetime) : (puts "No Pollster Data for " + self.state_long)
     fte_data ? (self.updated_538 = fte_data[:updated]; self.percent_clinton = fte_data[:clinton]; self.percent_trump = fte_data[:trump]) : "No FiveThirtyEight Data"
+    self.calculate
     self.save
   end
 end
