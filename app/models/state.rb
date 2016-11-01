@@ -5,6 +5,8 @@ class State < ActiveRecord::Base
   require 'yaml'
   require 'pollster'
 
+  attr_accessor :winning_margin, :caution
+
   def self.poll_for_data
     @@pull_time = Time.now
     @@five_thirty_eight = Nokogiri::HTML(open("http://projects.fivethirtyeight.com/2016-election-forecast"))
@@ -26,6 +28,27 @@ class State < ActiveRecord::Base
   def huff_pull_and_parse(state_shortcode)
     poll = @@huff.find {|chart| chart.state == state_shortcode.upcase}
     poll.estimates_by_date.first.to_json if poll
+  end
+
+  def calculate
+    self.winning_margin = (self.percent_clinton - self.percent_trump).abs
+    self.caution = nil
+    small_win = 0..14.99999999
+    moderate_win = 15..24.99999999
+    large_win = 25..100
+
+    case self.winning_margin
+    when small_win
+      self.can_I_vote = false
+    when moderate_win
+      self.can_I_vote = true
+      self.caution = true
+    when large_win
+      self.can_I_vote = true
+      self.caution = false
+    end
+    self.save
+    self.caution
   end
 
   def refresh
