@@ -12,6 +12,7 @@
  *
  *= require_tree .
  *= require_self
+ *= require jqvmap
  */
 
 /*
@@ -38,7 +39,14 @@ a {
   color: #fff;
 }
 
-body{
+#vmap {
+  font-family: 'Tahoma';
+  color: #fff;
+  margin-right:auto;
+  margin-left:auto;
+}
+
+body {
   font-family: 'Verdana', 'Roboto', sans-serif;
   /*background-color: #353433;
   background-image: url('./app/assets/images/cheap_diagonal_fabric.png');

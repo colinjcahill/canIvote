@@ -13,4 +13,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require jquery.vmap
+//= require jquery.vmap.usa
 //= require_tree .
