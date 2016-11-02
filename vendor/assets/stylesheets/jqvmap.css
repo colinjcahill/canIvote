@@ -1,3 +1,12 @@
+#vmap {
+  width: 1200px;
+  height: 800px;
+  color: #fff;
+  font-size: 12px;
+  margin-right:auto;
+  margin-left:auto;
+}
+
 .jqvmap-label
 {
 	position: absolute;
@@ -48,3 +57,91 @@
   width: 100%;
   height: 500px;
 }
+
+
+#jqvmap1_ca_pin {
+        margin-left: -2%;
+      }
+
+#jqvmap1_mn_pin {
+        margin-left: -2%;
+      }
+
+#jqvmap1_mi_pin {
+		margin-top: 2%;
+		margin-left: 2%;
+      }
+
+#jqvmap1_ok_pin {
+  margin-left: 2%;
+}
+
+#jqvmap1_id_pin {
+        margin-top: 3%;
+      }
+
+#jqvmap1_la_pin {
+        margin-left: -2%;
+      }
+
+#jqvmap1_fl_pin {
+        margin-left: 5%;
+      }
+
+#jqvmap1_ak_pin {
+        margin-top: -3%;
+      }
+
+#jqvmap1_md_pin {
+        margin-left: 5%;
+        margin-top: 1%;
+      }
+
+#jqvmap1_dc_pin {
+        margin-top: 1%;
+      }
+
+#jqvmap1_de_pin {
+        margin-top: 0%;
+        margin-left: 2%;
+      }
+
+#jqvmap1_wv_pin {
+
+        margin-left: -2%;
+      }
+
+#jqvmap1_ia_pin {
+        margin-top: -1%;
+        margin-left: -1%;
+      }
+
+#jqvmap1_nv_pin {
+        margin-top: -2%;
+        margin-left: -1%;
+      }
+
+#jqvmap1_hi_pin {
+        margin-top: 1%;
+        margin-left: 4%;
+      }
+
+#jqvmap1_vt_pin {
+        margin-top: -1%;
+      }
+
+#jqvmap1_ma_pin {
+        margin-top: -1%;
+      }
+
+#jqvmap1_me_pin {
+        margin-top: -1%;
+      }
+
+#jqvmap1_ct_pin {
+        margin-top: -1%;
+      }
+
+#jqvmap1_il_pin {
+        margin-top: -1%;
+      }

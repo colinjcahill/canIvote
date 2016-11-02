@@ -39,16 +39,6 @@ a {
   color: #fff;
 }
 
-#vmap {
-  width: 1200px;
-  height: 800px;
-  position: relative;
-  font-size: 12px;
-  font-family: 'Tahoma';
-  color: #fff;
-  margin-right:auto;
-  margin-left:auto;
-}
 
 body {
   font-family: 'Verdana', 'Roboto', sans-serif;
