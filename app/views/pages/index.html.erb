@@ -11,30 +11,31 @@
   <%= javascript_include_tag "jquery.vmap.usa" %>
   <script>
     jQuery(document).ready(function() {
-                                            jQuery('#vmap').vectorMap({
-                                        map: 'usa_en',
-                                        showLabels: true,
-                                        backgroundColor: 'transparent',
-                                        borderColor: '#fff',
-                                        borderOpacity: 0.25,
-                                        borderWidth: 3,
-                                        color: '#70A5FF',
-                                        enableZoom: false,
-                                        hoverColor: '#0C750F',
-                                        hoverOpacity: null,
-                                        normalizeFunction: 'linear',
-                                        scaleColors: ['#b6d6ff', '#005ace'],
-                                        selectedColor: '#0C750F',
-                                        selectedRegions: null,
-                                        showTooltip: false,
-                                        onRegionClick: function(element, code, region)
-                                        {
-                                          window.location.href = "#"+region;
-                                        }
-                                      });
-                                });
+          jQuery('#vmap').vectorMap({
+        map: 'usa_en',
+        showLabels: true,
+        backgroundColor: 'transparent',
+        borderColor: '#fff',
+        borderOpacity: 0.25,
+        borderWidth: 3,
+        color: '#70A5FF',
+        enableZoom: false,
+        hoverColor: '#0C750F',
+        hoverOpacity: null,
+        normalizeFunction: 'linear',
+        scaleColors: ['#b6d6ff', '#005ace'],
+        selectedColor: '#0C750F',
+        selectedRegions: null,
+        showTooltip: false,
+        onRegionClick: function(element, code, region)
+        {
+        window.location.href = "#"+region;
+        jQuery('#vmap').vectorMap('deselect', element);
+        }
+        });
+      });
   </script>
-  <div id="vmap" style="width: 1200px; height: 800px;"></div>
+  <div id="vmap"></div>
   <table id="super" border="1">
     <th>State</th>
     <th>Polling Data</th>
