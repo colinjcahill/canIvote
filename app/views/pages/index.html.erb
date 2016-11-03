@@ -1,7 +1,30 @@
 <head>
-  <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Work+Sans" rel="stylesheet">
+  <script>
+    function search_map_clear(field, map) {
+                                        var states = $('#search_' + field + '_states');
+                                        var sel_states = states.val();
+                                        var highlight2 = [];
+                                        $.each(sel_states.split(','), function (i, code) {
+                                            highlight2[code] = '#f4f3f0';
+                                            $('#' + map).vectorMap('set', 'colors', highlight2);
+                                        });
+                                        states.val("");
+                                    }
+  </script>
 </head>
+<header>
+  <div id="banner">
+    <h1>Can I vote for Jill Stein?</h1>
+  </div>
+  <h3>Vote your values without voting for Trump.</h3>
+</header>
 <body>
+  <div id="vote">
+    <%= image_tag("vote.jpg", id: "vote", size: '300') %>
+    <%= image_tag("jill_stein_b-700x700.jpg", id: "jill", size: '300') %>
+    <%= image_tag("fork.gif", id: "fork", size: '300') %>
+  </div>
   <div id ="top"></div>
   <br>
   <br>
@@ -9,48 +32,62 @@
   <%= javascript_include_tag "jquery.vmap.usa" %>
   <script>
     jQuery(document).ready(function() {
-                                      jQuery('#vmap').vectorMap({
-                  map: 'usa_en',
-                  showLabels: true,
-                  backgroundColor: 'transparent',
-                  borderColor: '#fff',
-                  borderOpacity: 0,
-                  borderWidth: .2,
-                  color: '#70A5FF',
-                  enableZoom: false,
-                  hoverColor: '#0C750F',
-                  hoverOpacity: null,
-                  normalizeFunction: 'linear',
-                  scaleColors: ['#b6d6ff', '#005ace'],
-                  selectedColor: '#0C750F',
-                  selectedRegions: null,
-                  showTooltip: false,
-                  onRegionClick: function(element, code, region)
-                  {
-                  window.location.href = "#"+region;
-                  jQuery('#vmap').vectorMap('deselect', element);
-                  }
-                  });
-                    });
+                                                        jQuery('#vmap').vectorMap({
+                                                        map: 'usa_en',
+                                                        showLabels: true,
+                                                        backgroundColor: 'transparent',
+                                                        borderColor: '#fff',
+                                                        borderOpacity: 0,
+                                                        borderWidth: .2,
+                                                        color: '#70A5FF',
+                                                        enableZoom: false,
+                                                        hoverColor: '#0C750F',
+                                                        hoverOpacity: null,
+                                                        normalizeFunction: 'linear',
+                                                        scaleColors: ['#b6d6ff', '#005ace'],
+                                                        selectedColor: '#0C750F',
+                                                        selectedRegions: null,
+                                                        showTooltip: false,
+                                                        onRegionClick: function(element, code, region)
+                                                        {
+                                                          window.location.hash = '';
+                                                          window.location.hash = region;
+                                                          jQuery('#vmap').vectorMap('deselect', element);
+                                                        }
+                                                        });
+                                                      });
   </script>
   <div id="vmap"></div>
   <table id="super" border="1">
     <th>State</th>
     <th>Polling Data</th>
     <% @states.each do |state| %>
-      <tr>
-        <td id ="<%= state.state_long %>"><%= state.state_long %></td>
-        <td>
-          <ul>
-            <li>FivethirtyEight Clinton: <%= state.percent_clinton %>%</li>
-            <li>FivethirtyEight Trump: <%= state.percent_trump %>%</li>
-            <li></li>
-            <li></li>
-          </ul>
+      <tr class = <%= state.can_I_vote ? "positive" : "negative"  %> >
+        <td id ="<%= state.state_long %>">
+          <%= state.state_long %>
+          <a href="#top" id='return'>Back to top
         </td>
-      </tr>
-    <% end %>
-  </table>
-  <h3 id ="end">whoooa</h3>
-  <a href="#Maryland">mary</a>
-</body>
+          <td>
+            <ul>
+              <li>FivethirtyEight latest estimate for Clinton <%= state.percent_clinton %>%
+              <br>
+                FivethirtyEight latest estimate for Trump: <%= state.percent_trump %>%
+
+
+
+
+
+
+
+                <p id="updated">(data updated at <%= state.updated_at.httpdate %>)</p>
+              </li>
+              <li></li>
+              <li></li>
+            </ul>
+          </td>
+        </tr>
+      <% end %>
+    </table>
+    <h3 id ="end">whoooa</h3>
+    <a href="#Maryland">mary</a>
+  </body>
