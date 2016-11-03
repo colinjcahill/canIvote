@@ -59,6 +59,12 @@ h3 {
   margin-bottom: 15px;
 }
 
+#advice
+ {
+  display:inline-block;
+  background-color: #FFFF00;
+  color: #000;
+ }
 
 div#vote
 {

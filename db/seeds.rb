@@ -20,4 +20,5 @@ end
 State.all.update_all(jill_on_ballot: true, splits_vote: false)
 State.where(state_short: ["SD", "NV", "OK", "IN", "NC", "GA"]).update_all(jill_on_ballot: false)
 State.where(state_short: ["IN", "NC", "GA"]).update_all(jill_write_in: true)
+State.where(state_short: ["SD", "OK", "NV"]).update_all(can_I_vote: false)
 State.where(state_short: ["NE", "ME"]).update_all(splits_vote: true)

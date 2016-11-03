@@ -5,7 +5,7 @@ class State < ActiveRecord::Base
   require 'yaml'
   require 'pollster'
 
-  attr_accessor :winning_margin
+  attr_accessor :winning_margin, :winning_party
 
   def self.poll_for_data
     @@pull_time = Time.now
@@ -42,12 +42,15 @@ class State < ActiveRecord::Base
     case self.winning_margin
     when small_win
       self.can_I_vote = false
+      return "small"
     when moderate_win
       self.caution = true
       self.can_I_vote = true
+      return "moderate"
     when large_win
       self.caution = false
       self.can_I_vote = true
+      return "large"
     end
     self.save
   end
