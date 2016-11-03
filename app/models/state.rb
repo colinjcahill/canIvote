@@ -27,7 +27,7 @@ class State < ActiveRecord::Base
 
   def huff_pull_and_parse(state_shortcode)
     poll = @@huff.find {|chart| chart.state == state_shortcode.upcase}
-    poll.estimates_by_date.first.to_json if poll
+    poll.estimates_by_date.first.to_json if (poll && poll.estimates_by_date.any?)
   end
 
   def winning_margin
