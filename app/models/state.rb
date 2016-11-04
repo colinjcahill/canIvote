@@ -5,7 +5,7 @@ class State < ActiveRecord::Base
   require 'yaml'
   require 'pollster'
 
-  attr_accessor :winning_margin
+  attr_accessor :winning_margin, :negative_advice
 
   def self.poll_for_data
     @@pull_time = Time.now
@@ -34,6 +34,13 @@ class State < ActiveRecord::Base
     (self.percent_clinton - self.percent_trump).abs
   end
 
+  def negative_advice
+    reasons = [self.jill_on_ballot, self.calculate]
+    responses = ["Unfortunately, Jill Stein is not on the ballot in this state.", "The margin of victory between the Republican and Democratic candidate is this state is " + reasons.last + "."]
+    reasons.first ? responses.shift : responses
+    return responses
+  end
+
   def calculate
     small_win = 0..14.99999999
     moderate_win = 15..24.99999999
@@ -42,14 +49,19 @@ class State < ActiveRecord::Base
     case self.winning_margin
     when small_win
       self.can_I_vote = false
+      self.save
+      "small"
     when moderate_win
       self.caution = true
       self.can_I_vote = true
+      self.save
+      "moderate"
     when large_win
       self.caution = false
       self.can_I_vote = true
+      self.save
+      "large"
     end
-    self.save
   end
 
   def refresh

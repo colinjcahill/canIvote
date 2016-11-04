@@ -2,15 +2,15 @@
   <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Work+Sans" rel="stylesheet">
   <script>
     function search_map_clear(field, map) {
-                                                                                        var states = $('#search_' + field + '_states');
-                                                                                        var sel_states = states.val();
-                                                                                        var highlight2 = [];
-                                                                                        $.each(sel_states.split(','), function (i, code) {
-                                                                                            highlight2[code] = '#f4f3f0';
-                                                                                            $('#' + map).vectorMap('set', 'colors', highlight2);
-                                                                                        });
-                                                                                        states.val("");
-                                                                                    }
+                          var states = $('#search_' + field + '_states');
+                          var sel_states = states.val();
+                          var highlight2 = [];
+                          $.each(sel_states.split(','), function (i, code) {
+                              highlight2[code] = '#f4f3f0';
+                              $('#' + map).vectorMap('set', 'colors', highlight2);
+                          });
+                          states.val("");
+                          }
   </script>
 </head>
 <header>
@@ -50,12 +50,12 @@
                         showTooltip: false,
                         onRegionClick: function(element, code, region)
                         {
-                          window.location.hash = '';
-                          window.location.hash = region;
-                          jQuery('#vmap').vectorMap('deselect', element);
+                        window.location.hash = '';
+                        window.location.hash = region;
+                        jQuery('#vmap').vectorMap('deselect', element);
                         }
                         });
-                      });
+                        });
   </script>
   <div id="vmap"></div>
   <table id="super" border="1">
@@ -69,12 +69,23 @@
         </td>
           <td>
             <ul>
-              <div id ="advice"><%= state.can_I_vote ? @yes_jill : @no_jill %></div>
+              <div id ="advice">
+                <% if state.can_I_vote %>
+                  <%= @yes_jill %>
+                <% else %>
+                  <%= @no_jill %>
+                  <% state.negative_advice.each do |a|%>
+                    <li id ="reason"><%= a %>  Try visiting <a href="https://www.trumptraders.org/">https://www.trumptraders.org/</a> to make a vote trade with a citizen in a safe state."</li>
+                  <% end %>
+                <% end %>
+              </div>
               <br>
               <br>
               <li>FivethirtyEight latest estimate for Clinton <%= state.percent_clinton %>%
               <br>
                 FivethirtyEight latest estimate for Trump: <%= state.percent_trump %>%
+
+
 
 
 
