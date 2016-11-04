@@ -42,9 +42,9 @@ class State < ActiveRecord::Base
   end
 
   def calculate
-    small_win = 0..14.99999999
-    moderate_win = 15..24.99999999
-    large_win = 25..100
+    small_win = 0..29.9999999
+    moderate_win = 30..49.9999999
+    large_win = 50..100
 
     case self.winning_margin
     when small_win
