@@ -69,18 +69,14 @@ h3 {
 
 div#vote
 {
-  display: block;
-  margin-top:50px;
-  margin-left:10%;
-  margin-right:10%;
+  width:100%;
+  display:inline-block;
+  text-align:center;
 }
 
 img {
 border-radius: 10%;
-   margin-left:auto;
-  margin-right:auto;
-  padding-left: 20px;
-  padding-right:20px;
+  padding: 30px 30px 30px;
 }
 
 body {
@@ -112,8 +108,8 @@ font-family: 'Work Sans', sans-serif;
   table-layout: auto;
   border: 2px;
   border-collapse: collapse;
-  margin-left: 15%;
-  margin-right: 15%;
+  margin-left: auto;
+  margin-right: auto;
   margin-top:200px;
 }
 
@@ -128,10 +124,20 @@ font-family: 'Work Sans', sans-serif;
   border: 1px solid rgba(255,255,255,0.3);
 }
 
-th{
+th:nth-of-type(1){
 background-color: #1041f6;
   padding: 20px 15px;
   text-align: center;
+  font-weight: 500;
+  font-size: 30px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+th:nth-of-type(2){
+background-color: #1041f6;
+  padding: 20px 20px 20px 35px;
+  text-align: left;
   font-weight: 500;
   font-size: 30px;
   color: #fff;
