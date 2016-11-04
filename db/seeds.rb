@@ -14,7 +14,7 @@ State.poll_for_data
   puts "Creating seed data for " + long
   state.state_long = long
   state.state_short = short
-  state.fivethirtyeight_url = "http://projects.fivethirtyeight.com/2016-election-forecast" + "/"+ state.state_long.downcase
+  state.fivethirtyeight_url = "http://projects.fivethirtyeight.com/2016-election-forecast" + "/"+ state.state_long.parameterize
   state.refresh
 end
 
