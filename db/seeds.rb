@@ -19,7 +19,6 @@ State.poll_for_data
 end
 
 State.all.update_all(jill_on_ballot: true, splits_vote: false)
-State.where(state_short: "DC").update(fivethirtyeight_url: "http://projects.fivethirtyeight.com/2016-election-forecast/district-of-columbia/")
 State.where(state_short: ["SD", "NV", "OK", "IN", "NC", "GA"]).update_all(jill_on_ballot: false)
 State.where(state_short: ["IN", "NC", "GA"]).update_all(jill_write_in: true)
 State.where(state_short: ["SD", "OK", "NV"]).update_all(can_I_vote: false)
