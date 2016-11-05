@@ -2,25 +2,25 @@
   <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Work+Sans" rel="stylesheet">
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-                        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+                                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                                })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-                        ga('create', 'UA-86871903-1', 'auto');
-                        ga('require', 'linkid');
-                        ga('send', 'pageview');
+                                ga('create', 'UA-86871903-1', 'auto');
+                                ga('require', 'linkid');
+                                ga('send', 'pageview');
   </script>
   <script>
     function search_map_clear(field, map) {
-                          var states = $('#search_' + field + '_states');
-                          var sel_states = states.val();
-                          var highlight2 = [];
-                          $.each(sel_states.split(','), function (i, code) {
-                              highlight2[code] = '#f4f3f0';
-                              $('#' + map).vectorMap('set', 'colors', highlight2);
-                          });
-                          states.val("");
-                        }
+                                  var states = $('#search_' + field + '_states');
+                                  var sel_states = states.val();
+                                  var highlight2 = [];
+                                  $.each(sel_states.split(','), function (i, code) {
+                                      highlight2[code] = '#f4f3f0';
+                                      $('#' + map).vectorMap('set', 'colors', highlight2);
+                                  });
+                                  states.val("");
+                                }
   </script>
 </head>
 <header>
@@ -42,30 +42,30 @@
   <%= javascript_include_tag "jquery.vmap.usa" %>
   <script>
     jQuery(document).ready(function() {
-                              jQuery('#vmap').vectorMap({
-                              map: 'usa_en',
-                              showLabels: true,
-                              backgroundColor: 'transparent',
-                              borderColor: '#fff',
-                              borderOpacity: 0,
-                              borderWidth: .2,
-                              color: '#70A5FF',
-                              enableZoom: false,
-                              hoverColor: '#0C750F',
-                              hoverOpacity: null,
-                              normalizeFunction: 'linear',
-                              scaleColors: ['#b6d6ff', '#005ace'],
-                              selectedColor: '#0C750F',
-                              selectedRegions: null,
-                              showTooltip: false,
-                              onRegionClick: function(element, code, region)
-                              {
-                              window.location.hash = '';
-                              window.location.hash = region;
-                              jQuery('#vmap').vectorMap('deselect', element);
-                              }
-                          });
-                        });
+                                      jQuery('#vmap').vectorMap({
+                                      map: 'usa_en',
+                                      showLabels: true,
+                                      backgroundColor: 'transparent',
+                                      borderColor: '#fff',
+                                      borderOpacity: 0,
+                                      borderWidth: .2,
+                                      color: '#70A5FF',
+                                      enableZoom: false,
+                                      hoverColor: '#0C750F',
+                                      hoverOpacity: null,
+                                      normalizeFunction: 'linear',
+                                      scaleColors: ['#b6d6ff', '#005ace'],
+                                      selectedColor: '#0C750F',
+                                      selectedRegions: null,
+                                      showTooltip: false,
+                                      onRegionClick: function(element, code, region)
+                                      {
+                                      window.location.hash = '';
+                                      window.location.hash = region;
+                                      jQuery('#vmap').vectorMap('deselect', element);
+                                      }
+                                  });
+                                });
   </script>
   <div id="container">
     <div id="vmap"></div>
@@ -85,12 +85,12 @@
                 <% if state.can_I_vote %>
                   <%= @yes_jill %>
                   <% state.caution_advice.each do |a|%>
-                    <li id ="reason"><%= a %>  You may also consider visiting <a href="https://www.trumptraders.org/">https://www.trumptraders.org/</a> to make a vote trade with a citizen in a safe state."</li>
+                    <li id ="reason"><%= a %>  You may also consider visiting <a href="https://www.trumptraders.org/">https://www.trumptraders.org/</a> to make a vote trade with a citizen in a safe state.</li>
                   <% end %>
                 <% else %>
                   <%= @no_jill %>
                   <% state.negative_advice.each do |a|%>
-                    <li id ="reason"><%= a %>  Try visiting <a href="https://www.trumptraders.org/">https://www.trumptraders.org/</a> to make a vote trade with a citizen in a safe state."</li>
+                    <li id ="reason"><%= a %>  Try visiting <a href="https://www.trumptraders.org/">https://www.trumptraders.org/</a> to make a vote trade with a citizen in a safe state.</li>
                   <% end %>
                 <% end %>
               </div>
@@ -99,6 +99,8 @@
               <li><a target="_blank" href=<%= state.fivethirtyeight_url %>>FivethirtyEight latest estimate</a> for Clinton <%= state.percent_clinton %>%
               <br>
                 <a target="_blank" href=<%= state.fivethirtyeight_url %>>FivethirtyEight latest estimate</a> for Trump: <%= state.percent_trump %>%
+
+
 
 
 
