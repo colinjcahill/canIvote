@@ -41,6 +41,16 @@ class State < ActiveRecord::Base
     return responses
   end
 
+  def caution_advice
+    responses = []
+    if self.jill_write_in
+      responses << "Jill Stein is not explicitly present on the ballot in this state.  In order to vote for her you will need to write her name in as a separate candidate."
+    elsif self.caution
+      responses << "While FiveThirtyEight predicts a moderate chance of victory for Clinton, you should make sure you are well-informed of the risks before voting in this state."
+    end
+    return responses
+  end
+
   def calculate
     small_win = 0..29.9999999
     moderate_win = 30..49.9999999
