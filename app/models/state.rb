@@ -64,12 +64,12 @@ class State < ActiveRecord::Base
     when small_win
       self.can_I_vote = false
       self.save
-      "small"
+      "narrow"
     when moderate_win
       self.caution = true
-      self.can_I_vote = true
+      self.can_I_vote = false
       self.save
-      "moderate"
+      "fluctuating"
     when large_win
       self.caution = false
       self.can_I_vote = true
