@@ -47,6 +47,8 @@ class State < ActiveRecord::Base
       responses << "Jill Stein is not explicitly present on the ballot in this state.  In order to vote for her you will need to write her name in as a separate candidate."
     elsif self.caution
       responses << "While FiveThirtyEight predicts a moderate chance of victory for Clinton, you should make sure you are well-informed of the risks before voting in this state."
+    elsif self.splits_vote
+      responses << "This state splits vote between districts instead of applying a winner-take-all.  Your vote may count more in one congressional district than in another."
     end
     return responses
   end
