@@ -182,6 +182,12 @@ font-size: 10px;
 font-style: italic;
 }
 
+#pollster_candidate {
+  margin-left:10%;
+  font-size: 14px;
+  text-align: left;
+}
+
 /* for custom scrollbar for webkit browser*/
 
 ::-webkit-scrollbar {

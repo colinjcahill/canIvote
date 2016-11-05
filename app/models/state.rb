@@ -5,7 +5,7 @@ class State < ActiveRecord::Base
   require 'yaml'
   require 'pollster'
 
-  attr_accessor :winning_margin, :negative_advice
+  attr_accessor :winning_margin, :negative_advice, :pollster_parsed
 
   def self.poll_for_data
     @@pull_time = Time.now
@@ -49,6 +49,10 @@ class State < ActiveRecord::Base
       responses << "While FiveThirtyEight predicts a moderate chance of victory for Clinton, you should make sure you are well-informed of the risks before voting in this state."
     end
     return responses
+  end
+
+  def pollster_parsed
+    results = (JSON.parse self.pollster_dump)["estimates"]
   end
 
   def calculate

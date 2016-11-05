@@ -2,25 +2,25 @@
   <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Work+Sans" rel="stylesheet">
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-                                })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-                                ga('create', 'UA-86871903-1', 'auto');
-                                ga('require', 'linkid');
-                                ga('send', 'pageview');
+    ga('create', 'UA-86871903-1', 'auto');
+    ga('require', 'linkid');
+    ga('send', 'pageview');
   </script>
   <script>
     function search_map_clear(field, map) {
-                                  var states = $('#search_' + field + '_states');
-                                  var sel_states = states.val();
-                                  var highlight2 = [];
-                                  $.each(sel_states.split(','), function (i, code) {
-                                      highlight2[code] = '#f4f3f0';
-                                      $('#' + map).vectorMap('set', 'colors', highlight2);
-                                  });
-                                  states.val("");
-                                }
+    var states = $('#search_' + field + '_states');
+    var sel_states = states.val();
+    var highlight2 = [];
+    $.each(sel_states.split(','), function (i, code) {
+      highlight2[code] = '#f4f3f0';
+      $('#' + map).vectorMap('set', 'colors', highlight2);
+    });
+    states.val("");
+                                                                }
   </script>
 </head>
 <header>
@@ -42,30 +42,30 @@
   <%= javascript_include_tag "jquery.vmap.usa" %>
   <script>
     jQuery(document).ready(function() {
-                                      jQuery('#vmap').vectorMap({
-                                      map: 'usa_en',
-                                      showLabels: true,
-                                      backgroundColor: 'transparent',
-                                      borderColor: '#fff',
-                                      borderOpacity: 0,
-                                      borderWidth: .2,
-                                      color: '#70A5FF',
-                                      enableZoom: false,
-                                      hoverColor: '#0C750F',
-                                      hoverOpacity: null,
-                                      normalizeFunction: 'linear',
-                                      scaleColors: ['#b6d6ff', '#005ace'],
-                                      selectedColor: '#0C750F',
-                                      selectedRegions: null,
-                                      showTooltip: false,
-                                      onRegionClick: function(element, code, region)
-                                      {
-                                      window.location.hash = '';
-                                      window.location.hash = region;
-                                      jQuery('#vmap').vectorMap('deselect', element);
-                                      }
-                                  });
-                                });
+    jQuery('#vmap').vectorMap({
+    map: 'usa_en',
+    showLabels: true,
+    backgroundColor: 'transparent',
+    borderColor: '#fff',
+    borderOpacity: 0,
+    borderWidth: .2,
+    color: '#70A5FF',
+    enableZoom: false,
+    hoverColor: '#0C750F',
+    hoverOpacity: null,
+    normalizeFunction: 'linear',
+    scaleColors: ['#b6d6ff', '#005ace'],
+    selectedColor: '#0C750F',
+    selectedRegions: null,
+    showTooltip: false,
+    onRegionClick: function(element, code, region)
+    {
+    window.location.hash = '';
+    window.location.hash = region;
+    jQuery('#vmap').vectorMap('deselect', element);
+    }
+  });
+});
   </script>
   <div id="container">
     <div id="vmap"></div>
@@ -96,22 +96,24 @@
               </div>
               <br>
               <br>
-              <li><a target="_blank" href=<%= state.fivethirtyeight_url %>>FivethirtyEight latest estimate</a> for Clinton <%= state.percent_clinton %>%
+            <p> The numbers below represent sophisticated data analysis by politically renowned <a href="http://fivethirtyeight.com/">FiveThirtyEight</a>.  These numbers represent <em>a likelihood of victory</em> based on detailed analysis.  They are <strong>not</strong> the raw poll numbers for this state.</p>
+
+              <p><a target="_blank" href=<%= state.fivethirtyeight_url %>>FivethirtyEight latest estimate</a> for Clinton <%= state.percent_clinton %>%
               <br>
                 <a target="_blank" href=<%= state.fivethirtyeight_url %>>FivethirtyEight latest estimate</a> for Trump: <%= state.percent_trump %>%
-
-
-
-
-
-
-
                 <p id="updated">(data updated at <%= state.updated_at.httpdate %>)</p>
-              </li>
-              <br>
-            </ul>
-          </td>
-        </tr>
-      <% end %>
-    </table>
-  </body>
+              </p>
+              <% if state.pollster_dump %>
+                <p id="pollster">The numbers below represent recent poll numbers from <a href="http://elections.huffingtonpost.com/pollster">HuffPost's Pollster API</a>.  These are actual poll results:</p>
+                  <% state.pollster_parsed.each do |candidate_hash| %>
+                    <li id ="pollster_candidate"><%= candidate_hash["choice"] %>: <%= candidate_hash["value"] %>%</li>
+                    <% end %>
+                   <p id="updated">(data updated at <%= state.pollster_updated.httpdate %>)</p>
+               <% end %>
+                    <br>
+                  </ul>
+                </td>
+              </tr>
+            <% end %>
+                    </table>
+                  </body>
