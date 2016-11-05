@@ -108,7 +108,7 @@
                   <% state.pollster_parsed.each do |candidate_hash| %>
                     <li id ="pollster_candidate"><%= candidate_hash["choice"] %>: <%= candidate_hash["value"] %>%</li>
                     <% end %>
-                   <p id="updated">(data updated at <%= state.pollster_updated.to_date.strftime("%a, %b %-d") %>)</p>
+                   <p id="updated">(data updated at <%= state.pollster_updated.to_date.strftime("%c") %>)</p>
                <% end %>
                     <br>
                   </ul>
